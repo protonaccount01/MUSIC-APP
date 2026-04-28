@@ -26,6 +26,10 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
 
+      # লাইসেন্স এরর সমাধানের জন্য এই নতুন স্টেপটি যোগ করা হয়েছে
+      - name: Accept Android SDK Licenses
+        run: yes | sdkmanager --licenses
+
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
         with:
@@ -76,4 +80,5 @@ jobs:
           name: SojaKothy-Release-APK-Unsigned
           path: app/build/outputs/apk/release/*.apk
           retention-days: 30
-          if-no-files-found: error
+          if-no-files-found: error 
+          
