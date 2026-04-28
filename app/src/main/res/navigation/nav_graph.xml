@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.sojakothy.music.ui.fragments.HomeFragment"
+        android:label="@string/home" />
+
+    <fragment
+        android:id="@+id/downloadsFragment"
+        android:name="com.sojakothy.music.ui.fragments.DownloadsFragment"
+        android:label="@string/downloads" />
+
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.sojakothy.music.ui.fragments.FavoritesFragment"
+        android:label="@string/favorites" />
+
+    <fragment
+        android:id="@+id/playerFragment"
+        android:name="com.sojakothy.music.ui.fragments.PlayerFragment"
+        android:label="@string/player" />
+
+</navigation>
